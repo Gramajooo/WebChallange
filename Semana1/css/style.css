@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/bg-desktop.svg");
+    background-position: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+p {
+    text-align: justify;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    width: 210px;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.banner {
+    min-width: 50%;
+    flex-wrap: wrap;
+    padding: 30px;
+    object-fit: contain;
+}
+
+.mockups {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 100%;
+}
+
+.banner-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+    justify-content: center;
+}
+
+.info {
+    display: block;
+}
+
+.register {
+    width: 100%;
+    margin: 30px 10px 10px 0;
+    align-self: flex-start;
+}
+
+.boton {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    width: 200px;
+    font-size: 17px;
+    height: 50px;
+    font-weight: 700 !important;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    box-shadow: 17px 7px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin-left: 12px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .banner-info {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .register{
+        display: table-cell;
+        vertical-align: middle;
+        justify-content: center;
+    }
+
+    .boton{
+        display: inline-block;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner {
+        padding: 0;
+        margin: 0;
+    }
+
+    .banner-info {
+        padding: 40px;
+    }
+
+    .register{
+        display: table-cell;
+        vertical-align: middle;
+        justify-content: center;
+    }
+
+    .boton{
+        display: inline-block;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    footer {
+        justify-content: center !important;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        width: 150px;
+    }
+
+    .banner {
+        width: 40% !important;
+    }
+
+    .banner-info {
+        width: 100%;
+        margin: 0 40px !important;
+    }
+
+    h1 {
+        font-size: 25px !important;
+    }
+
+    p {
+        font-size: 0.9rem !important;
+    }
+
+    .boton {
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .icono {
+        width: 27px;
+        height: 27px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+    .banner-info {
+        margin: 0 60px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .boton {
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+}
