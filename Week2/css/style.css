@@ -1,0 +1,8 @@
+body{
+    background-color: tomato;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
